@@ -1,0 +1,7 @@
+{
+  "name": " Library Assistant",
+  "description": "A modern, interactive library companion for students.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
