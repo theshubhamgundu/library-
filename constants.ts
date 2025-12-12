@@ -1,27 +1,27 @@
 import { Book, QuizQuestion } from './types';
 
-// Using Placehold.co for reliable, generated book covers with clear text
+// Updated images to look more like distinct textbooks using colored placeholders with clear text
 export const MOCK_BOOKS: Book[] = [
   {
     id: '1',
-    title: 'Science (Class VI)',
-    author: 'NCERT',
+    title: 'Science',
+    author: 'NCERT Class VI',
     genre: 'Science',
     rack: 'S-06',
-    summary: 'Explore food sources, components of food, fibre to fabric, sorting materials, and the world of living organisms.',
-    coverUrl: 'https://placehold.co/400x600/6E2594/FFFFFF.png?text=Science+VI&font=montserrat',
+    summary: 'Food sources, components of food, fibre to fabric, sorting materials, and living organisms.',
+    coverUrl: 'https://placehold.co/400x600/6E2594/FFFFFF.png?text=SCIENCE\nClass+6&font=roboto',
     rating: 4.8,
     isFavorite: false,
     moods: ['Excited', 'Bored']
   },
   {
     id: '2',
-    title: 'Mathematics (Class VI)',
-    author: 'NCERT',
+    title: 'Mathematics',
+    author: 'NCERT Class VI',
     genre: 'Maths',
     rack: 'M-06',
-    summary: 'Learn about knowing our numbers, whole numbers, playing with numbers, basic geometrical ideas, and integers.',
-    coverUrl: 'https://placehold.co/400x600/FF33BA/FFFFFF.png?text=Maths+VI&font=montserrat',
+    summary: 'Knowing our numbers, whole numbers, playing with numbers, basic geometrical ideas, and integers.',
+    coverUrl: 'https://placehold.co/400x600/FF33BA/FFFFFF.png?text=MATHS\nClass+6&font=roboto',
     rating: 4.5,
     isFavorite: true,
     moods: ['Bored', 'Sleepy']
@@ -29,23 +29,23 @@ export const MOCK_BOOKS: Book[] = [
   {
     id: '3',
     title: 'Honeysuckle',
-    author: 'NCERT',
+    author: 'English Lit.',
     genre: 'English',
     rack: 'E-01',
-    summary: 'The main English textbook for Class 6, featuring stories like "Who Did Patrick\'s Homework?" and beautiful poems.',
-    coverUrl: 'https://placehold.co/400x600/00D26A/FFFFFF.png?text=Honeysuckle&font=montserrat',
+    summary: 'Stories like "Who Did Patrick\'s Homework?" and beautiful poems for Grade 6.',
+    coverUrl: 'https://placehold.co/400x600/00D26A/FFFFFF.png?text=HONEYSUCKLE\nEnglish&font=roboto',
     rating: 4.6,
     isFavorite: false,
     moods: ['Happy', 'Sad']
   },
   {
     id: '4',
-    title: 'The Earth Our Habitat',
-    author: 'NCERT',
+    title: 'The Earth',
+    author: 'Geography',
     genre: 'Geography',
     rack: 'SS-01',
-    summary: 'Understanding the solar system, globe, latitudes, longitudes, and the motions of the Earth.',
-    coverUrl: 'https://placehold.co/400x600/3B82F6/FFFFFF.png?text=Geography&font=montserrat',
+    summary: 'The solar system, globe, latitudes, longitudes, and the motions of the Earth.',
+    coverUrl: 'https://placehold.co/400x600/3B82F6/FFFFFF.png?text=THE+EARTH\nGeography&font=roboto',
     rating: 4.4,
     isFavorite: false,
     moods: ['Excited']
@@ -53,47 +53,47 @@ export const MOCK_BOOKS: Book[] = [
   {
     id: '5',
     title: 'Our Pasts - I',
-    author: 'NCERT',
+    author: 'History',
     genre: 'History',
     rack: 'SS-02',
-    summary: 'A journey into early human history, from gathering to growing food, and the earliest cities.',
-    coverUrl: 'https://placehold.co/400x600/F59E0B/FFFFFF.png?text=History+I&font=montserrat',
+    summary: 'Early human history, from gathering to growing food, and the earliest cities.',
+    coverUrl: 'https://placehold.co/400x600/F59E0B/FFFFFF.png?text=OUR+PASTS\nHistory&font=roboto',
     rating: 4.7,
     isFavorite: true,
     moods: ['Bored', 'Sleepy']
   },
   {
     id: '6',
-    title: 'Vasant (Bhag 1)',
-    author: 'NCERT',
+    title: 'Vasant',
+    author: 'Hindi',
     genre: 'Hindi',
     rack: 'H-01',
     summary: 'A collection of engaging Hindi stories and poems designed for 6th standard students.',
-    coverUrl: 'https://placehold.co/400x600/EF4444/FFFFFF.png?text=Hindi+Vasant&font=montserrat',
+    coverUrl: 'https://placehold.co/400x600/EF4444/FFFFFF.png?text=VASANT\nHindi&font=roboto',
     rating: 4.3,
     isFavorite: false,
     moods: ['Happy', 'Sad']
   },
   {
     id: '7',
-    title: 'A Pact with the Sun',
-    author: 'NCERT',
+    title: 'Pact with Sun',
+    author: 'Supp. English',
     genre: 'English',
     rack: 'E-02',
-    summary: 'Supplementary English reader containing moral stories and fables for extended reading.',
-    coverUrl: 'https://placehold.co/400x600/10B981/FFFFFF.png?text=Sup+English&font=montserrat',
+    summary: 'Supplementary English reader containing moral stories and fables.',
+    coverUrl: 'https://placehold.co/400x600/10B981/FFFFFF.png?text=PACT+W+SUN\nReader&font=roboto',
     rating: 4.5,
     isFavorite: false,
     moods: ['Sleepy', 'Sad']
   },
   {
     id: '8',
-    title: 'Social & Political Life',
-    author: 'NCERT',
+    title: 'Social Life',
+    author: 'Civics',
     genre: 'Civics',
     rack: 'SS-03',
-    summary: 'Understand diversity, government, local administration, and rural livelihoods.',
-    coverUrl: 'https://placehold.co/400x600/8B5CF6/FFFFFF.png?text=Civics+VI&font=montserrat',
+    summary: 'Diversity, government, local administration, and rural livelihoods.',
+    coverUrl: 'https://placehold.co/400x600/8B5CF6/FFFFFF.png?text=POLITICAL\nLife&font=roboto',
     rating: 4.2,
     isFavorite: false,
     moods: ['Bored']
@@ -144,20 +144,22 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
 ];
 
 export const COLORS = {
-  // Zepto-inspired Light Violet Theme - Adjusted for better visibility
-  primary: '#6E2594',   // Deep Violet (Brand)
-  secondary: '#FF33BA', // Hot Pink (Accent)
-  accent: '#E6FF00',    // Neon Lime/Yellow (Highlights)
-  success: '#00D26A',   // Green
-  danger: '#FF4B4B',    // Red
+  // Theme Colors
+  primary: '#7C3AED',   // Violet-600 (Main Action)
+  secondary: '#DB2777', // Pink-600 (Secondary Action)
+  accent: '#FACC15',    // Yellow-400 (Highlights)
+  success: '#10B981',   // Emerald-500
+  danger: '#EF4444',    // Red-500
   
-  // Theme Colors (Light Mode)
-  background: '#EBD9FC', // Richer Light Lavender (Distinct Violet)
-  card: '#FFFFFF',       // Pure white cards
-  input: '#F3E8FF',      // Light lavender for inputs
+  // Backgrounds
+  background: '#E9D5FF', // Purple-200 (Main App BG - Requested Light Violet)
+  card: '#FFFFFF',       // White
+  input: '#F3E8FF',      // Purple-100
   
-  textMain: '#2D0046',   // Dark Violet/Black text for readability
-  textSub: '#5B4070',    // Darker muted text for better contrast
+  // Text
+  textMain: '#2E1065',   // Purple-950 (High Contrast)
+  textSub: '#5B21B6',    // Purple-800
   
-  shadow: 'rgba(110, 37, 148, 0.2)', // Violet tinted shadow
+  // Shadows
+  shadowColor: 'rgba(124, 58, 237, 0.25)' // Purple shadow
 };
