@@ -1,18 +1,43 @@
-
-// Mock service to simulate AI behavior without an API key
-// This allows the app to function for UI demonstration purposes without needing a backend or API credentials.
+import { GoogleGenAI, Type } from "@google/genai";
 
 export const identifyBookFromImage = async (base64Image: string): Promise<{ title: string; author: string; genre: string } | null> => {
-  console.log("Simulating scan for image...");
-  
-  // Simulate network delay (2 seconds)
-  await new Promise(resolve => setTimeout(resolve, 2000));
+  try {
+    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    
+    const response = await ai.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: {
+        parts: [
+          {
+            inlineData: {
+              mimeType: 'image/jpeg',
+              data: base64Image,
+            },
+          },
+          {
+            text: 'Identify this book from its cover. Return the title, author, and genre.',
+          },
+        ],
+      },
+      config: {
+        responseMimeType: 'application/json',
+        responseSchema: {
+          type: Type.OBJECT,
+          properties: {
+            title: { type: Type.STRING },
+            author: { type: Type.STRING },
+            genre: { type: Type.STRING },
+          },
+          required: ['title', 'author', 'genre'],
+        },
+      },
+    });
 
-  // Return a mock result for demonstration
-  // Since we aren't using an API key, we return a hardcoded "detected" book.
-  return {
-    title: "Harry Potter and the Sorcerer's Stone",
-    author: "J.K. Rowling",
-    genre: "Fantasy"
-  };
+    const text = response.text;
+    if (!text) return null;
+    return JSON.parse(text);
+  } catch (error) {
+    console.error("Gemini scanning error:", error);
+    return null;
+  }
 };

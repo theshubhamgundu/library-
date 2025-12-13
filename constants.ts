@@ -5,7 +5,7 @@ export const MOCK_BOOKS: Book[] = [
   {
     id: '1',
     title: 'Science',
-    author: 'NCERT Class VI',
+    author: 'Prof. R.S. Sindhu (Chair)',
     genre: 'Science',
     rack: 'S-06',
     summary: 'Food sources, components of food, fibre to fabric, sorting materials, and living organisms.',
@@ -17,7 +17,7 @@ export const MOCK_BOOKS: Book[] = [
   {
     id: '2',
     title: 'Mathematics',
-    author: 'NCERT Class VI',
+    author: 'Prof. H.K. Dewan (Advisor)',
     genre: 'Maths',
     rack: 'M-06',
     summary: 'Knowing our numbers, whole numbers, playing with numbers, basic geometrical ideas, and integers.',
@@ -29,7 +29,7 @@ export const MOCK_BOOKS: Book[] = [
   {
     id: '3',
     title: 'Honeysuckle',
-    author: 'English Lit.',
+    author: 'Prof. R. Amritavalli (Ed.)',
     genre: 'English',
     rack: 'E-01',
     summary: 'Stories like "Who Did Patrick\'s Homework?" and beautiful poems for Grade 6.',
@@ -41,7 +41,7 @@ export const MOCK_BOOKS: Book[] = [
   {
     id: '4',
     title: 'The Earth',
-    author: 'Geography',
+    author: 'Prof. Savita Sinha (Chair)',
     genre: 'Geography',
     rack: 'SS-01',
     summary: 'The solar system, globe, latitudes, longitudes, and the motions of the Earth.',
@@ -53,7 +53,7 @@ export const MOCK_BOOKS: Book[] = [
   {
     id: '5',
     title: 'Our Pasts - I',
-    author: 'History',
+    author: 'Prof. Neeladri Bhattacharya',
     genre: 'History',
     rack: 'SS-02',
     summary: 'Early human history, from gathering to growing food, and the earliest cities.',
@@ -65,7 +65,7 @@ export const MOCK_BOOKS: Book[] = [
   {
     id: '6',
     title: 'Vasant',
-    author: 'Hindi',
+    author: 'Prof. Purushottam Agrawal',
     genre: 'Hindi',
     rack: 'H-01',
     summary: 'A collection of engaging Hindi stories and poems designed for 6th standard students.',
@@ -77,7 +77,7 @@ export const MOCK_BOOKS: Book[] = [
   {
     id: '7',
     title: 'Pact with Sun',
-    author: 'Supp. English',
+    author: 'Zakir Husain & Others',
     genre: 'English',
     rack: 'E-02',
     summary: 'Supplementary English reader containing moral stories and fables.',
@@ -89,7 +89,7 @@ export const MOCK_BOOKS: Book[] = [
   {
     id: '8',
     title: 'Social Life',
-    author: 'Civics',
+    author: 'Prof. Saroj Yadav (Dean)',
     genre: 'Civics',
     rack: 'SS-03',
     summary: 'Diversity, government, local administration, and rural livelihoods.',
